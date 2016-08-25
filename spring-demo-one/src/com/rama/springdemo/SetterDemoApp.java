@@ -12,9 +12,13 @@ public class SetterDemoApp {
 		HockeyCoach hockey = context.getBean("hockeyCoach", HockeyCoach.class);
 		
 		// call methods on the bean
+		System.out.println(hockey.getDailyWorkout());
+		
 		System.out.println(hockey.getDailyFortune());
 		
-		System.out.println(hockey.getDailyWorkout());
+		System.out.println(hockey.getTeam());
+		
+		System.out.println(hockey.getNoOfMembers());
 		
 		// close the context
 		context.close();
