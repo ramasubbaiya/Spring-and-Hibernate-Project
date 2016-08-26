@@ -32,3 +32,14 @@
 * Proide meta-data about the class
 * Processed at compile time or run-time for special processing
 
+## What is Spring AutoWiring
+* For dependency injection, Spring can use auto wiring
+* Spring will look for a class that _matches_ the property
+* _matches by type_ : class or interface
+* Spring will inject it automatically - Hence it is autowired
+
+## Autowiring Injecting Types
+* Constructor Injection
+* Setter Injection
+* Field Injection
+
