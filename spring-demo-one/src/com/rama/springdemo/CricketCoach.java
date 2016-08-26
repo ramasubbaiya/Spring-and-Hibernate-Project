@@ -22,4 +22,14 @@ public class CricketCoach implements Coach{
 	public String getDailyFortune() {
 		return "Just dont do it "+ fortuneService.getFortune() ;
 	}
+	
+	// add an init method
+	public void doAnInit() {
+		System.out.println("CricketCoach: inside Init method");
+	}
+	
+	//add a destroy method
+	public void doADestroy() {
+		System.out.println("CricketCoach: inside Destroy method");
+	}
 }
