@@ -1,13 +1,20 @@
 package com.rama.springdemo;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 // Added a component instead of declaring a bean in the ApplicationContext 
 // @Component("tennisCoach")
 // If its @Component the TennisCoach (class name) -> tennisCoach (default bean id)
 @Component
+// Prototype - Creates an instance each time it is called
+// Singleton - Single instance is called for every time(Same instance for the n times called).
+// @Scope("prototype")
 public class TennisCoach implements Coach {
 
 	/*
@@ -70,5 +77,16 @@ public class TennisCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
-
+	
+	// define my init method
+	@PostConstruct
+	public void doAnInit() {
+		System.out.println(">> TennisCoach: inside init method");
+	}
+	
+	// define my destroy method
+	@PreDestroy
+	public void doADestroy() {
+		System.out.println(">> TennisCoach: inside destroy method");
+	}
 }
