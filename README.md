@@ -43,3 +43,22 @@
 * Setter Injection
 * Field Injection
 
+## Java Source - configuration based
+Steps:
+1. Create a Java class and annotate as @Configuration
+2. Add component scanning support: @ComponentScan (optional)
+3. Read Spring Java configuration class
+4. Retrieve bean from Spring container
+
+## Spring MVC Benefits
+* The Spring way of building web app UIs in Java
+* Leverage a set of resuable UI components
+* Help manage application state of web requests
+* Process form data: validation, conversion etc
+* Flexible configuration for the view layer
+
+## Components of Spring MVC Application
+* A set of web pages to layout UI components
+* A collection of Spring beans (controllers, services, etc...)
+* Spring configuration (XML, Annotations or Java)
+
