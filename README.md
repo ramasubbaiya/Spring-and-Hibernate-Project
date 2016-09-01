@@ -71,3 +71,9 @@ Steps:
 ## Two Options for Mapping
 * XML config file (legacy)
 * Java Annotations (modern, preferred)
+
+## Hibernate CRUD App
+* _Create_ example - CreateStudentDemo.java
+* _Read_ example - ReadStudentDemo.java
+* _Update_ example - UpdateStudentDemo.java
+* _Delete_ example - DeleteStudentDemo.java

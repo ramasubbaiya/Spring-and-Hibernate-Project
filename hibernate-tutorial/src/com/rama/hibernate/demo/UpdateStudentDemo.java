@@ -26,8 +26,8 @@ public class UpdateStudentDemo {
 
 			Student myStudent = session.get(Student.class, studentId);
 			
-			// update first name to "Duck"
-			System.out.println("Deleting student...");
+			// delete student where id is 1
+			System.out.println("Deleting student with id:1");
 			session.delete(myStudent);
 
 			// commit transaction
@@ -37,7 +37,7 @@ public class UpdateStudentDemo {
 			session = factory.getCurrentSession();
 			session.beginTransaction();
 			
-			//update eamil for all students
+			//delete student where id is 3
 			System.out.println("Deleting Student where id is 3");
 			
 			session.createQuery("delete from Student where id=3").executeUpdate();
