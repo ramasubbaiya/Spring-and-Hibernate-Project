@@ -38,6 +38,7 @@
 * _matches by type_ : class or interface
 * Spring will inject it automatically - Hence it is autowired
 
+
 ## Autowiring Injecting Types
 * Constructor Injection
 * Setter Injection
@@ -62,5 +63,11 @@ Steps:
 * A collection of Spring beans (controllers, services, etc...)
 * Spring configuration (XML, Annotations or Java)
 
+## Hibernate installation and setup
+1. Add Hibernate Configuration file
+2. Annotate Java Class
+3. Develop Java Code to perform database operations
 
-## Hibernate installation
+## Two Options for Mapping
+* XML config file (legacy)
+* Java Annotations (modern, preferred)
