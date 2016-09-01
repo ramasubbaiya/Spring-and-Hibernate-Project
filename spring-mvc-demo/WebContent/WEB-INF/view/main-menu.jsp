@@ -16,6 +16,10 @@
 	
 	<br><br>
 	
-	<h5><a href="showForm">Back to Login</a></h5>
+	<h5><a href="hello/showForm">Hello World Form</a></h5>
+	
+	<br><br>
+	
+	<h5><a href="student/showForm">Student Form</a></h5>
 </body>
 </html>
