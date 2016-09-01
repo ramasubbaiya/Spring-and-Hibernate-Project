@@ -62,3 +62,5 @@ Steps:
 * A collection of Spring beans (controllers, services, etc...)
 * Spring configuration (XML, Annotations or Java)
 
+
+## Hibernate installation
